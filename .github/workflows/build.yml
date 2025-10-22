@@ -18,9 +18,10 @@ jobs:
 
       - name: Build EXE
         run: pyinstaller --onefile --windowed --add-data "cash.png;." cashdiplo_exe.py
-
+      
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: demo_luis_pina_exe
-          path: dist/demo_label_operations_cashdiplo.exe
+          path: dist/cashdiplo_exe.exe
+
